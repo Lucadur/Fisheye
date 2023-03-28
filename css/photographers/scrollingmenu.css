@@ -1,0 +1,35 @@
+/* SCROLLING MENU */
+
+nav {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+label[for='order-by'] {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+#order-by {
+    height: 50px;
+    width: 170px;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+    border: none;
+    background-color: #901C1C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+#order-by option {
+    font-size: 17px;
+    font-weight: 700;
+  }
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/photographer.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - photographe</title>
+  </head>
+  <body>
+
+    <header class="header-page" aria-hidden="false">
+      <a href="index.html" aria-label="Lien vers la page d'accueil Fisheye">
+        <img src="assets/images/logo.png" class="logo" alt="Logo Fisheye">
+      </a>
+    </header>
+
+    <main id="main">
+
+      <div class="photograph-header" aria-hidden="false">
+        <div id="photographer-description" aria-label="Contactez-moi"></div>
+        <button class="contact_button">
+          Contactez-moi
+        </button>
+      </div>
+
+      <nav aria-hidden="false">
+        <label for="order-by">Trier par</label>
+        <select id="order-by" aria-label="Trier par">
+          <option value="popularity">Popularité</option>
+          <option value="date">Date</option>
+          <option value="title">Titre</option>
+        </select>
+      </nav>
+
+      <section class="media-section" aria-hidden="false">
+      </section>
+
+    </main>
+
+    <div id="contact_modal" aria-hidden="true" role="dialog" tabindex="-1">
+      <div class="modal">
+        <header>
+          <h2 id="contact-header">Contactez-moi</h2>
+            <img src="assets/icons/close.svg" id="closeBtn" alt="Icône de fermeture" aria-label="Fermer le formulaire">
+        </header>
+        <form method="post">
+          <div>
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" required aria-labelledby="firstName">
+            <label for="lastName">Nom</label>
+            <input type="text" id="lastName" required aria-labelledby="lastName">
+            <label for="email">Email</label>
+            <input type="email" id="email" required aria-labelledby="email">
+            <label for="message">Votre message</label>
+            <input id="message" required aria-labelledby="message">
+          </div>
+          <button class="contact_button" type="submit" aria-label="Envoyer le formulaire">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="lightbox" aria-hidden="true" aria-label="Vue agrandie du média">
+      <div class="lightbox-content">
+        <div class="prev" aria-label="Média précédent">&lt;</div>
+        <div class="next" aria-label="Média suivant">></div>
+        <div class="main-media">
+          <div class="media-container"></div>
+        </div>
+        <div class="close" aria-label="Fermer la fenêtre">x</div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2e50b998d1.js" crossorigin="anonymous"></script>
+    <script type="module" src="/Fisheye/scripts/pages/photographer.js"></script>
+    <script type="module" src="/Fisheye/scripts/factories/ProfileFactory.js"></script>
+    <script type="module" src="/Fisheye/scripts/factories/MediaFactory.js"></script>
+    <script type="module" src="/Fisheye/scripts/utils/form.js"></script>
+    <script type="module" src="/Fisheye/scripts/utils/like.js"></script>
+    <script type="module" src="/Fisheye/scripts/utils/sort.js"></script>
+    <script type="module" src="/Fisheye/scripts/utils/lightbox.js"></script>
+  </body>
+</html>

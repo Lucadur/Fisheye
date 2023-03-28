@@ -1,0 +1,10 @@
+@import "/Fisheye/css/photographers/page.css";
+@import "/Fisheye/css/photographers/gallery.css";
+@import "/Fisheye/css/photographers/contactmodal.css";
+@import "/Fisheye/css/photographers/scrollingmenu.css";
+@import "/Fisheye/css/photographers/lightbox.css";
+
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+}

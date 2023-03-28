@@ -1,0 +1,77 @@
+/* PHOTOGRAPH PAGE */
+
+.logo {
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+#contact_modal {
+    display: none;
+}
+
+.photograph-header {
+    background-color: #FAFAFA;
+    height: 300px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.photograph-header h1 {
+    color: #D3573C;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1px;
+}
+
+#profileLocation {
+    font-size: 24px;
+    color: #901C1C;
+    font-weight: 400;
+}
+
+#profileLine {
+    font-size: 18px;
+}
+
+#profilePic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#profile-infos {
+    position: fixed;
+    bottom: 0;
+    right: 3%;
+    width: 370px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #DB8876;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+#profile-price{
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#total-like {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#profile-infos i {
+    font-size: 20px;
+}
